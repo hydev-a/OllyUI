@@ -92,6 +92,14 @@ On macOS and Linux, we will make the permission permanent by adding it to your s
 
 </details>
 
+### ⚙️ Step 3: Running the Ollama Server
+
+This is a very easy step, in order for OllyUI to communicate with Ollama, the Ollama server needs to be running. You can do this by simply typing the command below:
+```bash
+    ollama serve
+```
+You're ready to roll. If it gives you an error, just make sure Ollama isn't already running by checking your windows tray or through task manager.
+
 ---
 
 ### 💻 Step 3: Install and Launch OllyUI
@@ -103,8 +111,8 @@ You're on the final step!
 
 2.  **Download the Correct File:** In the latest release section (usually at the top), find the file for your operating system.
     * **Windows:** Download the file ending in `.msi`. (e.g., `OllyUI_1.0.0_x64_en-US.msi`)
-    * **macOS:** Download the file ending in `.dmg`. (e.g., `OllyUI_1.0.0_x64.dmg`)
-    * **Linux:** Download the `.AppImage` or `.deb` file.
+    * **macOS:** Download the file ending in `.dmg`. (e.g., `OllyUI_1.0.0_x64.dmg`) *Will be released very soon!*
+    * **Linux:** Download the `.AppImage` or `.deb` file. *Will be released very soon!*
 
 3.  **Install the App:** Find the downloaded file in your "Downloads" folder and double-click it. Follow the standard on-screen instructions. It will install just like any other app.
 
