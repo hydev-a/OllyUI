@@ -92,7 +92,7 @@ On macOS and Linux, we will make the permission permanent by adding it to your s
 
 </details>
 
-### ⚙️ Step 3: Running the Ollama Server
+### ⚙️ Step 2.5: Running the Ollama Server
 
 This is a very easy step, in order for OllyUI to communicate with Ollama, the Ollama server needs to be running. You can do this by simply typing the command below:
 ```bash
