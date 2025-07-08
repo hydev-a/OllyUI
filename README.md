@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="[https://i.imgur.com/your-logo-link.png" alt="OllyUI Logo](https://github.com/hydev-a/OllyUI/blob/main/icon.png)" width="128"/>
+  <img src="https://github.com/hydev-a/OllyUI/blob/main/icon.png" width="128"/>
   <h1>OllyUI</h1>
   <p><strong>Your beautiful, powerful, and private desktop companion for local AI.</strong></p>
 </div>
