@@ -119,7 +119,7 @@ Once installed, find **OllyUI** in your applications list, launch it, and enjoy 
 
 ## 🗺️ Future Roadmap
 
-OllyUI v1.0 is just the beginning! I'm committed to making this the best local AI companion out there. Here are some of the features and improvements planned for the future:
+OllyUI v0.1.0 is just the beginning! I'm committed to making this the best local AI companion out there. Here are some of the features and improvements planned for the future:
 
 * **📱 Responsiveness Rework**
     * A planned overhaul of the user interface to ensure it looks and works perfectly on a wider range of screen sizes and layouts, from small windows to large monitors.
