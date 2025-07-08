@@ -1,8 +1,12 @@
-# 🎨 OllyUI
+<div align="center">
+  <img src="https://i.imgur.com/your-logo-link.png" alt="OllyUI Logo" width="128"/>
+  <h1>OllyUI</h1>
+  <p><strong>Your beautiful, powerful, and private desktop companion for local AI.</strong></p>
+</div>
 
-> Your beautiful, powerful, and private desktop companion for local AI.
+---
 
-## Welcome to OllyUI!
+## About OllyUI
 
 Have you ever wanted to use powerful AI models like the ones you see online, but entirely on your own computer for maximum privacy and speed? That's what **Ollama** lets you do, and **OllyUI** is the perfect app to make that experience easy, beautiful, and fun.
 
@@ -10,13 +14,11 @@ OllyUI is a lightweight and complete desktop application designed to be the ulti
 
 Whether you're a developer prototyping ideas, a writer looking for a creative partner, a student doing research, or just someone curious about AI, OllyUI provides the tools you need in a simple, elegant package.
 
----
-
 ## ✨ Features That Matter
 
 OllyUI is designed to be simple on the outside and powerful on the inside.
 
-* **🗂️ Full Conversation Management:** Your chat history is automatically saved locally. You can easily rename, delete, and switch between different conversations.
+* **🗂️ Full Conversation Management:** All your chats are automatically saved locally. You can easily rename, delete, and switch between different conversations.
 * **🚀 Automatic Model Detection:** OllyUI automatically finds all of your installed Ollama models and lets you switch between them from the settings menu.
 * **⚙️ Total Model Control:** Fine-tune your experience by adjusting advanced settings like the AI's creativity (temperature), response length (max tokens), and memory (history length). You can even provide a custom "System Prompt" to change the AI's personality!
 * **✍️ Beautiful Code & Text:** The AI's responses are beautifully formatted with full Markdown support, including syntax highlighting for code blocks, making it easy to read and copy.
@@ -42,16 +44,16 @@ Before you can use OllyUI, your computer needs to have the core Ollama software 
     ```bash
     ollama run gemma
     ```
-    This will download Google's "Gemma" model, a great starting choice. You can do this for any model you like (e.g., `ollama run llama3`). The first time you run this, you'll see a download progress bar. Once it's done, you'll be able to chat with the model in your terminal. You can then close this chat.
+    This will download Google's "Gemma" model, a great starting choice. You can do this for any model you like (e.g., `ollama run llama3`). The first time you run this, you'll see a download progress bar. Once it's done, you can close the command line window.
 
-### 🔧 Step 2: Configure Ollama to Accept Connections from OllyUI
+### 🔧 Step 2: One-Time Ollama Configuration
 
-This is the most important technical step. For security, Ollama doesn't let other apps talk to it by default. We need to give OllyUI explicit permission.
+This is the most important technical step. For security, Ollama doesn't let other apps talk to it by default. We need to give OllyUI permanent permission. **You only have to do this once!**
 
-**Why is this needed?** Think of it like a security guard. By default, the guard only lets you (the computer owner) talk to Ollama directly. We need to tell the guard that OllyUI is a trusted friend and is allowed to connect.
+> **Why is this needed?** Think of it like a security guard. By default, the guard only lets you (the computer owner) talk to Ollama directly. We need to tell the guard that OllyUI is a trusted friend and is always allowed to connect.
 
 <details>
-<summary><b>➡️ Click Here for Detailed Windows Instructions</b></summary>
+<summary><strong>➡️ Click Here for Detailed Windows Instructions</strong></summary>
 
 On Windows, we will add a permanent "System Environment Variable".
 
@@ -65,42 +67,29 @@ On Windows, we will add a permanent "System Environment Variable".
     ```
     You should see a message that says `SUCCESS: Specified value was saved.`
 4.  **Restart Your Computer:** This is the easiest way to ensure the new setting is applied everywhere.
-5.  After restarting, you can start Ollama again. It will now be ready for OllyUI.
+5.  After restarting, you can start Ollama again. It will now be ready for OllyUI forever.
 
 </details>
 
 <details>
-<summary><b>➡️ Click Here for Detailed macOS & Linux Instructions</b></summary>
+<summary><strong>➡️ Click Here for Detailed macOS & Linux Instructions</strong></summary>
 
-On macOS and Linux, we need to set an environment variable before starting the server.
+On macOS and Linux, we will make the permission permanent by adding it to your shell's startup file.
 
-**Option A: The Simple Way (For each session)**
-
-Every time you want to use OllyUI, you'll first need to start the Ollama server with a special command.
-
-1.  Open your **Terminal** application.
-2.  Run the following command. This command both sets the permission and starts the server at the same time.
-    ```bash
-    export OLLAMA_ORIGINS="*" && ollama serve
-    ```
-3.  Keep this terminal window open while you use OllyUI. When you close the terminal, the server will stop.
-
-**Option B: The Permanent Way (Set it and forget it)**
-
-If you don't want to run the command above every time, you can add it to your shell's startup file.
-
-1.  Open your **Terminal**.
-2.  You need to edit either `.zshrc` (for modern macOS/Linux) or `.bash_profile` (for older systems). You can check which one to use by typing `echo $SHELL`.
-3.  Open the file in a simple text editor. For example:
-    ```bash
-    nano ~/.zshrc
-    ```
-4.  Scroll to the very bottom of the file and add this new line:
+1.  **Open your Terminal** application.
+2.  **Identify Your Shell:** You need to know if you're using `zsh` (common on modern macOS) or `bash`. You can check by running `echo $SHELL`.
+3.  **Open the Correct Configuration File:**
+    * If you use `zsh`, run: `nano ~/.zshrc`
+    * If you use `bash`, run: `nano ~/.bash_profile`
+4.  **Add the Command:** Use the arrow keys to scroll to the very bottom of the file and add this new line:
     ```bash
     export OLLAMA_ORIGINS="*"
     ```
-5.  Save the file (in `nano`, press `Ctrl+X`, then `Y`, then `Enter`).
-6.  Close and reopen your terminal. Now, the permission is set automatically every time you start your computer. You can just run `ollama serve` normally.
+5.  **Save and Exit:**
+    * Press `Ctrl+X`.
+    * Press `Y` to confirm you want to save.
+    * Press `Enter` to confirm the filename.
+6.  **Close and reopen your terminal.** The setting is now permanent. You can now start Ollama normally (either by running `ollama serve` or launching the desktop app), and OllyUI will always be ableto connect.
 
 </details>
 
@@ -133,4 +122,3 @@ Once installed, find **OllyUI** in your applications list, launch it, and enjoy 
 ### 📜 License
 
 This project is licensed under the MIT License.
-
