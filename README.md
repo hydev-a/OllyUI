@@ -23,9 +23,8 @@ OllyUI is designed to be simple on the outside and powerful on the inside.
 * **⚙️ Total Model Control:** Fine-tune your experience by adjusting advanced settings like the AI's creativity (temperature), response length (max tokens), and memory (history length). You can even provide a custom "System Prompt" to change the AI's personality!
 * **✍️ Beautiful Code & Text:** The AI's responses are beautifully formatted with full Markdown support, including syntax highlighting for code blocks, making it easy to read and copy.
 * **📎 Effortless File Attachments:** Have a document you want the AI to read? Just attach a `.pdf` or `.txt` file, and its contents will be included in your conversation.
-* **🌍 True RTL Language Support:** OllyUI seamlessly handles right-to-left languages like Persian, Arabic, and Hebrew, ensuring correct text alignment in both your messages and the AI's responses.
-* **🌗 Sleek Light & Dark Modes:** Automatically matches your system's theme, or you can toggle between them with a single click.
-* **↔️ Smart Resizing Input:** The message box comfortably grows and shrinks as you type, giving you plenty of space for your thoughts.
+* **🌍 True RTL Language Support:** OllyUI seamlessly handles right-to-left languages, ensuring correct text alignment in both your messages and the AI's responses.
+* **🌗 Sleek Dark Mode:** An eye-pleasing dark mode suited for those all-nighters you hold with your favorite models, debugging code.
 
 ---
 
@@ -72,7 +71,7 @@ On Windows, we will add a permanent "System Environment Variable".
 </details>
 
 <details>
-<summary><strong>➡️ Click Here for Detailed macOS & Linux Instructions</strong></summary>
+<summary><strong>➡️ Click Here for Detailed macOS & Linux Instructions (RELEASE FOR THESE PLATFORMS COMING VERY SOON!)</strong></summary>
 
 On macOS and Linux, we will make the permission permanent by adding it to your shell's startup file.
 
@@ -100,8 +99,7 @@ On macOS and Linux, we will make the permission permanent by adding it to your s
 You're on the final step!
 
 1.  **Go to the Releases Page:** All official versions of OllyUI are hosted here.
-    * **[Click here to go to the OllyUI Downloads Page](https://github.com/your-username/your-repo-name/releases)**
-    *(Note: This link will be updated to the real one upon release!)*
+    * **[Click here to go to the OllyUI Downloads Page](https://github.com/hydev-a/OllyUI/releases/)**
 
 2.  **Download the Correct File:** In the latest release section (usually at the top), find the file for your operating system.
     * **Windows:** Download the file ending in `.msi`. (e.g., `OllyUI_1.0.0_x64_en-US.msi`)
@@ -116,6 +114,29 @@ Once installed, find **OllyUI** in your applications list, launch it, and enjoy 
 
 * **"My models aren't showing up in the settings!"**
     * This is almost always because the configuration in **Step 2** was missed or didn't apply correctly. Please go back and carefully follow the instructions for your operating system, especially the part about restarting your computer or your terminal session.
+
+---
+
+## 🗺️ Future Roadmap
+
+OllyUI v1.0 is just the beginning! I'm committed to making this the best local AI companion out there. Here are some of the features and improvements planned for the future:
+
+* **📱 Responsiveness Rework**
+    * A planned overhaul of the user interface to ensure it looks and works perfectly on a wider range of screen sizes and layouts, from small windows to large monitors.
+
+* **🖼️ OCR Support for Images**
+    * The ability to attach images (`.png`, `.jpg`, etc.) and have OllyUI automatically extract any text from them to include in your conversation with the AI.
+
+* **🎨 Enhanced Theme System**
+    * Reworking the UI to support light mode and custom themes.
+
+* **🐧 Official Linux & macOS Support**
+    * Installers will be available very soon, stay tuned!
+
+* **🤖 Android Release (Long-Term Goal)**
+    * A long-term vision to bring the power and privacy of OllyUI to your mobile device, allowing you to connect to your home Ollama server from anywhere.
+
+Have an idea or a feature you'd like to see? Feel free to open an issue or discussion on this GitHub page!
 
 ---
 
