@@ -135,8 +135,8 @@ dist
 !.yarn/versions
 
 # Tauri
-/src-tauri/target
-/src-tauri/Cargo.lock
+src-tauri/target
+src-tauri/Cargo.lock
 
 # Vite logs files
 vite.config.js.timestamp-*
